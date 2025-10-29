@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - ExpenseTracker</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link href="https://cdn.syncfusion.com/ej2/31.2.2/bootstrap5-dark.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ExpenseTracker.styles.css" asp-append-version="true" />
     <script src="https://cdn.syncfusion.com/ej2/25.2.7/dist/ej2.min.js"></script>
@@ -32,17 +33,15 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - ExpenseTracker - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
         </div>
-    </footer>
+    </div>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
