@@ -8,5 +8,6 @@ public class ApplicationDbContext : DbContext
     public DbSet<Category> Categories => Set<Category>();
 
     public DbSet<Transaction> Transactions { get; set; }
+
     //public DbSet<Category> Categories { get; set; }
 }
