@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Users/ayamydani/Documents/Projects/ExpenseTracker/wwwroot/favicon-16x16.png",
+      "PackagePath": "staticwebassets/favicon-16x16.png"
+    },
+    {
+      "Id": "/Users/ayamydani/Documents/Projects/ExpenseTracker/wwwroot/favicon-32x32.png",
+      "PackagePath": "staticwebassets/favicon-32x32.png"
+    },
+    {
       "Id": "/Users/ayamydani/Documents/Projects/ExpenseTracker/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
