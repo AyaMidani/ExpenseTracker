@@ -279,3 +279,6 @@
 /Users/ayamydani/Documents/Projects/ExpenseTracker/bin/Debug/net8.0/Syncfusion.EJ2.dll
 /Users/ayamydani/Documents/Projects/ExpenseTracker/bin/Debug/net8.0/Syncfusion.Licensing.dll
 /Users/ayamydani/Documents/Projects/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.MvcApplicationPartsAssemblyInfo.cs
+/Users/ayamydani/Documents/Projects/ExpenseTracker/bin/Debug/net8.0/DotNetEnv.dll
+/Users/ayamydani/Documents/Projects/ExpenseTracker/bin/Debug/net8.0/Sprache.dll
+/Users/ayamydani/Documents/Projects/ExpenseTracker/bin/Debug/net8.0/expense.db
