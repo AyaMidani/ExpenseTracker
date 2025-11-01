@@ -44,15 +44,17 @@
         });
     }
 
-    <ejs-sidebar id="sidebar" width="290px" enableDock dockSize="100px" target=".dock-target" enableGestures="false">
-        <e-content-template>
-          <div class="logo-wrapper">
+ <i id="sidebar-toggler" class="fa-solid fa-bars" style="position: fixed; top:10px; left:10px; z-index:9999;"></i>
+
+<ejs-sidebar id="sidebar" width="290px" enableDock dockSize="100px" target=".dock-target" enableGestures="false" closeOnDocumentClick="false">
+    <e-content-template>
+        <div class="logo-wrapper">
             <div class="w-100"></div>
-            <i id="sidebar-toggler" class="fa-solid"></i>
         </div>
-        <ejs-menu id="menu" orientation="Vertical" items="menuItems" hamburgerMode></ejs-menu>
-        </e-content-template>
-    </ejs-sidebar>
+        <ejs-menu id="menu" orientation="Vertical" items="menuItems" hamburgerMode="false" enableSearch="true"></ejs-menu>
+    </e-content-template>
+</ejs-sidebar>
+
 
     <script>
     document.addEventListener('DOMContentLoaded',function (){

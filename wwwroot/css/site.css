@@ -348,3 +348,75 @@ img.profile-pic {
     .widget.chart {
         padding: 5px;
     }
+
+    /* Mobile adjustments */
+@media (max-width: 767px) {
+        body {
+            overflow: auto; /* allow scrolling & sidebar visibility */
+        }
+
+        .main-content {
+            margin-left: 0;
+            height: auto;
+            overflow-y: visible;
+        }
+
+        nav.navbar {
+            margin-left: 0;
+        }
+
+        #sidebar {
+            position: fixed;
+            left: -100%;
+            top: 0;
+            height: 100%;
+            transition: left 0.3s ease, visibility 0.3s ease;
+            visibility: hidden;
+        }
+
+        #sidebar.e-open {
+            left: 0;
+            left: 0 !important;
+            visibility: visible !important;
+        }
+        #sidebar-toggler {
+        position: fixed;
+            left: 10px;
+            top: 10px;
+        }
+
+        .logo-wrapper {
+            height: 50px;
+        }
+        .widget.h-100 {
+            height: auto !important; /* let it size naturally */
+            min-height: 80px; /* optional minimum */
+            padding: 1rem;
+        }
+
+        .widget.h-100 i {
+            font-size: 1.5rem; /* scale icons smaller on mobile */
+        }
+
+        .col-md-5 {
+            flex: 0 0 100%; /* make columns full width on mobile */
+            max-width: 100%;
+            margin-bottom: 15px; /* spacing between widgets */
+        }
+        .widget,
+        .e-grid,
+        .profile-wrapper,
+        nav.navbar {
+            margin-bottom: 20px; /* slightly more spacing on mobile */
+        }
+
+        .e-grid .e-gridcontent {
+            overflow-x: auto;
+        }
+
+        .e-grid .e-table {
+            min-width: 500px; /* or the width your table needs */
+        }
+
+    }
+
