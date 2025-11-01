@@ -2,6 +2,7 @@ using ExpenseTracker.Models;
 using Microsoft.EntityFrameworkCore;
 using Syncfusion.Licensing;
 using DotNetEnv;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,5 +48,9 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Dashboard}/{action=Index}/{id?}");
+
+var culture = new CultureInfo("en-US");
+CultureInfo.DefaultThreadCurrentCulture = culture;
+CultureInfo.DefaultThreadCurrentUICulture = culture;
 
 app.Run();
