@@ -1,4 +1,5 @@
 
+using System.Globalization;
 using System.Runtime.CompilerServices;
 using ExpenseTracker.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -41,6 +42,15 @@ namespace ExpenseTracker.Controllers
             int Balance = TotalIncome - TotalExpense;
             ViewBag.Balance = Balance.ToString("C0");
 
+            //Doughnut Chart - Expense By Category
+            ViewBag.DoughnutChartData = SelectedTransactions
+            .Where(i => i.Category.Type == "Expense").GroupBy(j => j.CategoryId)
+            .Select(k => new
+            {
+                CategoryTitleWithIcon = k.First().Category.Icon + " "+k.First().Category.Title,
+                amount = k.Sum(j => j.Amount),
+                formattedAmount = k.Sum(j => j.Amount).ToString("C0"),
+            });
             return View();
         }
     }
