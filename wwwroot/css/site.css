@@ -188,6 +188,7 @@ body {
 /*Navbar*/
 nav.navbar {
     background-color: rgba(18, 22, 29);
+    margin-left: 290px;
 }
 
     nav.navbar i {
